@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>hello dojo</h1>
+        <p>The current time is: <span id="time"></span></p>
+        <button id="time-btn">Get current time</button>
+    </div>
+    <script>
+    document.getElementById('time-btn').onclick = () => {
+      document.getElementById('time').innerHTML = new Date().toString();
+    }
+</script>
+</body>
+</html>
